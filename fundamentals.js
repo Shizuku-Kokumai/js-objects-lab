@@ -1,5 +1,11 @@
 const aCar = {
     owner: "Joe Bloggs",
+    address: "3 Wakers Lane",
+    previous_owner: [
+        { name: "Pat Smith", address: "Main Street" },
+        {name: "Sheila Dwyer", address: "High Street"}
+    ],
+
     type: {
         make: "Toyota",
         model: "Corolla",
@@ -19,3 +25,4 @@ aCar.color = {
 
 console.log(aCar.owner + 'drives a ' + aCar.type.make);
 console.log('It is a ' + aCar.color.exterior + 'color,' + aCar.milage + ' milage, with ' + aCar.color.interior.texture + 'interior.');
+console.log('First onwer : ' + aCar.previous_owner[0].name);
